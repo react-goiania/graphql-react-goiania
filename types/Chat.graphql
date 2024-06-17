@@ -1,0 +1,9 @@
+type Chat {
+  id: Int
+  title: String
+  image: String
+}
+
+type Query {
+  getChats: [Chat]
+}

@@ -1,0 +1,13 @@
+type User {
+  username: String
+  email: String
+}
+
+input UserInput {
+  username: String
+  email: String
+}
+
+extend type Mutation {
+  joinChat(username: String!, email: String!, room: Int!): User
+}

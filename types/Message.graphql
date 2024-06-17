@@ -1,0 +1,8 @@
+type Message {
+  user: User
+  text: String
+}
+
+type Mutation {
+  sendMessage(roomId: String!, message: String!, user: UserInput): Message
+}
